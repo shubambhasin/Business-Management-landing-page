@@ -1,0 +1,126 @@
+:root {
+  --accent-color: #e82762;
+  --cover: #1a1a24;
+  --dark-input: #27252e;
+  --nav-light-color: rgb(211, 211, 211);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.secondary-button,
+.primary-btn {
+  margin-top: 2rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  font-size: small;
+}
+
+.primary-btn {
+  background-color: var(--accent-color);
+}
+
+.main {
+  background-color: var(--cover);
+  padding-top: 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+  font-size: small;
+  overflow: hidden;
+}
+
+.brand {
+  font-size: xx-large;
+}
+
+.nav-main-links a {
+  
+
+  color: var(--nav-light-color);
+  position: relative;
+  margin: 20px;
+  padding-bottom: 5px;
+}
+.nav-main-links a:after
+{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--accent-color);
+    
+    transition: 0.2s ease;
+}
+.nav-main-links a:hover:after{
+    width: 100%;
+    
+}
+.nav-btns a {
+  margin: 10px;
+}
+.cover {
+  height: 100vh;
+  width: 80vw;
+  margin: 0 auto;
+  color: white;
+}
+.cover-main-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  align-items: center;
+  height: 80vh;
+}
+
+.left-content {
+}
+.left-content .big-text {
+  font-size: xxx-large;
+  margin: 5px 0 2rem 0;
+  outline: none;
+  user-select: none;
+}
+
+.cover-input {
+  padding: 1rem 0.7rem 1rem 0.7rem;
+  width: 230px;
+  background-color: var(--dark-input);
+  color: white;
+
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+  outline-color: var(--accent-color);
+}
+
+.cover-button {
+  padding: 1rem 2rem;
+  border: none;
+  margin-bottom: 1.3rem;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.right-content {
+}
+
+.right-content img {
+  width: 500px;
+  height: auto;
+  fill: red;
+}
