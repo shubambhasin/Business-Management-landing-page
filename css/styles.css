@@ -92,7 +92,7 @@ a {
 .left-content {
 }
 .left-content .big-text {
-  font-size: xxx-large;
+  font-size: 48px;
   margin: 5px 0 2rem 0;
   outline: none;
   user-select: none;
@@ -123,4 +123,75 @@ a {
   width: 500px;
   height: auto;
   fill: red;
+}
+
+@media screen and (max-width: 1200px)
+{
+    .left-content .big-text {
+        font-size: 40px;
+      }
+      
+    .right-content img {
+        width: 400px;
+       }
+      
+      .cover-input {
+        width: 170px;
+      
+      
+        border-radius: 5px 0px 0px 5px;
+        border: none;
+        outline-color: var(--accent-color);
+      }
+      .navbar
+      {
+          margin-bottom: 3rem;
+      }
+
+}
+
+@media screen and (max-width: 1010px)
+{
+    .cover
+    {
+        width: 85vw;
+    }
+    .navbar
+    {
+        margin-bottom: 2.5rem;
+    }
+    .left-content .big-text {
+        font-size: 35px;
+       }
+
+    .cover-input
+    {
+        width: 150px;
+        padding: 0.5rem 0.5rem;
+    }
+    .cover-button
+    {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media screen and (max-width: 877px)
+{
+    .cover-main-content
+    {
+        flex-direction: column;
+    }
+    .left-content
+    {
+        order: 2;
+
+    }
+    .right-content
+    {
+        order: 1;
+
+    }
+    .right-content img{
+        width: 400px;
+    }
 }
